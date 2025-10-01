@@ -105,17 +105,6 @@ export default function Index() {
       {/* ABOUT */}
       <section className="relative px-4 pb-24">
         <div className="max-w-5xl mx-auto text-center">
-          <div className="mx-auto border-2 border-[hsl(var(--primary))] rounded-2xl p-8 sm:p-12 bg-[hsl(var(--card))] shadow-[0_12px_24px_rgba(0,0,0,0.08)]">
-            <h2 className="font-manrope text-2xl sm:text-4xl md:text-5xl font-medium text-primary mb-6">
-              Gausasian Club started off as a random little thought!
-            </h2>
-            <p className="text-base sm:text-xl md:text-2xl leading-relaxed">
-              "What if we could actually train ourselves to notice the small,
-              unique details in human faces from different parts of the world?
-              This game is just a fun and laid-back way to test your eye and see
-              how good you are at spotting those subtle differences."
-            </p>
-          </div>
         </div>
       </section>
     </div>
