@@ -14,51 +14,52 @@
    * A different format will require also updating the theme in tailwind.config.ts.
   */
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Retro cream + burnt orange palette (HSL) */
+    --background: 35 56% 94%; /* paper cream */
+    --foreground: 23 28% 12%; /* deep brown text */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 35 56% 96%;
+    --card-foreground: 23 28% 12%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 35 56% 96%;
+    --popover-foreground: 23 28% 12%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 26 100% 50%; /* retro orange */
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 33 45% 85%;
+    --secondary-foreground: 23 28% 12%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 35 30% 88%;
+    --muted-foreground: 24 15% 35%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 20 55% 80%;
+    --accent-foreground: 23 28% 12%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 65% 45%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 22 25% 70%;
+    --input: 22 25% 70%;
+    --ring: 26 100% 50%;
 
     --radius: 0.5rem;
 
-    --sidebar-background: 0 0% 98%;
+    --sidebar-background: 35 56% 94%;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-foreground: 23 28% 12%;
 
-    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary: 26 100% 50%;
 
-    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-primary-foreground: 0 0% 100%;
 
-    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent: 33 45% 85%;
 
-    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-accent-foreground: 23 28% 12%;
 
-    --sidebar-border: 220 13% 91%;
+    --sidebar-border: 22 25% 70%;
 
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-ring: 26 100% 50%;
   }
 
   .dark {
@@ -107,5 +108,20 @@
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .retro-paper {
+    background-color: hsl(var(--background));
+    background-image:
+      radial-gradient(1200px 800px at 50% 15%, rgba(255, 110, 10, 0.12), transparent 60%),
+      radial-gradient(1000px 600px at 50% 100%, rgba(217, 95, 0, 0.10), transparent 60%),
+      repeating-linear-gradient(0deg, rgba(0,0,0,0.03) 0, rgba(0,0,0,0.03) 1px, transparent 1px, transparent 24px),
+      repeating-linear-gradient(90deg, rgba(0,0,0,0.03) 0, rgba(0,0,0,0.03) 1px, transparent 1px, transparent 24px);
+    background-blend-mode: multiply, multiply, normal, normal;
+  }
+  .text-retro-shadow {
+    text-shadow: 0 2px 0 rgba(140, 70, 0, 0.55), 0 6px 14px rgba(100, 50, 0, 0.35);
   }
 }
