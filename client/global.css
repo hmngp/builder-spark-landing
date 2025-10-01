@@ -115,13 +115,35 @@
   .retro-paper {
     background-color: hsl(var(--background));
     background-image:
-      radial-gradient(1200px 800px at 50% 15%, rgba(255, 110, 10, 0.12), transparent 60%),
-      radial-gradient(1000px 600px at 50% 100%, rgba(217, 95, 0, 0.10), transparent 60%),
-      repeating-linear-gradient(0deg, rgba(0,0,0,0.03) 0, rgba(0,0,0,0.03) 1px, transparent 1px, transparent 24px),
-      repeating-linear-gradient(90deg, rgba(0,0,0,0.03) 0, rgba(0,0,0,0.03) 1px, transparent 1px, transparent 24px);
+      radial-gradient(
+        1200px 800px at 50% 15%,
+        rgba(255, 110, 10, 0.12),
+        transparent 60%
+      ),
+      radial-gradient(
+        1000px 600px at 50% 100%,
+        rgba(217, 95, 0, 0.1),
+        transparent 60%
+      ),
+      repeating-linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.03) 0,
+        rgba(0, 0, 0, 0.03) 1px,
+        transparent 1px,
+        transparent 24px
+      ),
+      repeating-linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.03) 0,
+        rgba(0, 0, 0, 0.03) 1px,
+        transparent 1px,
+        transparent 24px
+      );
     background-blend-mode: multiply, multiply, normal, normal;
   }
   .text-retro-shadow {
-    text-shadow: 0 2px 0 rgba(140, 70, 0, 0.55), 0 6px 14px rgba(100, 50, 0, 0.35);
+    text-shadow:
+      0 2px 0 rgba(140, 70, 0, 0.55),
+      0 6px 14px rgba(100, 50, 0, 0.35);
   }
 }
