@@ -104,8 +104,7 @@ export default function Index() {
 
       {/* ABOUT */}
       <section className="relative px-4 pb-24">
-        <div className="max-w-5xl mx-auto text-center">
-        </div>
+        <div className="max-w-5xl mx-auto text-center" />
       </section>
     </div>
   );
