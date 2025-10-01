@@ -13,7 +13,15 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        'instrument': ['Instrument Serif', 'serif'],
+        'manrope': ['Manrope', 'sans-serif'],
+      },
       colors: {
+        brand: {
+          orange: '#FF6200',
+          dark: '#0A0A0A',
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
