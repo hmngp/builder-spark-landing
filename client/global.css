@@ -106,6 +106,12 @@
     @apply border-border;
   }
 
+  html, body, #root {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+
   body {
     @apply bg-background text-foreground;
   }
@@ -145,5 +151,17 @@
     text-shadow:
       0 2px 0 rgba(140, 70, 0, 0.55),
       0 6px 14px rgba(100, 50, 0, 0.35);
+  }
+  .screen-grid {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    width: 100vw;
+    height: 100vh;
+  }
+  .screen-grid-3 {
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    width: 100vw;
+    height: 100vh;
   }
 }
