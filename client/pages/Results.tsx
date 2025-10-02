@@ -3,8 +3,8 @@ import { RetroButton } from "@/components/RetroButton";
 
 export default function Results() {
   return (
-    <div className="min-h-screen retro-paper text-foreground font-manrope overflow-x-hidden">
-      <section className="relative min-h-[90vh] flex flex-col items-center justify-center px-4 py-16">
+    <div className="h-screen w-screen retro-paper text-foreground font-manrope overflow-hidden">
+      <section className="screen-grid relative px-4 py-16">
         <Link
           to="/"
           className="mb-8 sm:mb-12 text-3xl sm:text-4xl font-instrument"
