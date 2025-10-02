@@ -25,9 +25,9 @@ export default function Game() {
 
   return (
     <div className="min-h-screen retro-paper text-foreground font-manrope overflow-x-hidden">
-      <div className="screen-grid-3 relative px-4 py-6 sm:py-10">
+      <div className="screen-grid-3 relative px-4 py-4 sm:py-6 gap-y-4 sm:gap-y-6 overflow-hidden">
         {/* Top Bar */}
-        <div className="flex items-start justify-between mb-6 sm:mb-8">
+        <div className="flex items-start justify-between">
           {/* Home Button */}
           <Link
             to="/"
@@ -77,7 +77,7 @@ export default function Game() {
         </div>
 
         {/* Progress Section */}
-        <div className="w-full max-w-6xl mx-auto mb-8">
+        <div className="w-full max-w-6xl mx-auto">
           <div className="text-[hsl(var(--primary))] font-medium text-xl sm:text-3xl mb-3">
             {String(currentQuestion).padStart(2, "0")}/
             {String(totalQuestions).padStart(2, "0")}
@@ -91,11 +91,11 @@ export default function Game() {
         </div>
 
         {/* Main Game Area */}
-        <div className="flex-1 flex items-center justify-center">
-          <div className="w-full max-w-6xl bg-[hsl(var(--card))] rounded-3xl shadow-2xl p-6 sm:p-12 md:p-16">
+        <div className="flex items-center justify-center overflow-hidden">
+          <div className="w-full max-w-6xl h-full bg-[hsl(var(--card))] rounded-3xl shadow-2xl p-4 sm:p-8 md:p-10 grid grid-rows-[1fr_auto] gap-6 overflow-hidden">
             {/* Face Image */}
-            <div className="flex justify-center mb-8 sm:mb-12">
-              <div className="w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-3xl border border-[hsl(var(--primary))] overflow-hidden shadow-lg">
+            <div className="flex justify-center items-center">
+              <div className="rounded-3xl border border-[hsl(var(--primary))] overflow-hidden shadow-lg w-[clamp(12rem,35vh,22rem)] h-[clamp(12rem,35vh,22rem)] sm:w-[clamp(14rem,38vh,26rem)] sm:h-[clamp(14rem,38vh,26rem)] md:w-[clamp(16rem,42vh,28rem)] md:h-[clamp(16rem,42vh,28rem)]">
                 <img
                   src="https://api.builder.io/api/v1/image/assets/TEMP/1b48036ef1e26990506d082ab306f2c0e0c090bf?width=766"
                   alt="Guess the origin"
@@ -105,7 +105,7 @@ export default function Game() {
             </div>
 
             {/* Answer Options Grid */}
-            <div className="grid grid-cols-2 gap-4 sm:gap-6 max-w-3xl mx-auto">
+            <div className="grid grid-cols-2 gap-4 sm:gap-6 max-w-3xl mx-auto self-end">
               {options.map((option) => (
                 <button
                   key={option}
