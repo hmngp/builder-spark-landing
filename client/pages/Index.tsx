@@ -96,9 +96,9 @@ export default function Index() {
           </p>
 
           {/* Retro CTA */}
-          <button className="inline-flex items-center justify-center text-white uppercase tracking-wide font-semibold text-lg sm:text-xl px-10 sm:px-12 py-4 rounded-full border-2 border-[#6b3e12] shadow-[0_6px_0_#6b3e12,0_12px_20px_rgba(0,0,0,0.2)] bg-gradient-to-b from-amber-300 to-orange-500 hover:brightness-110 transition">
+          <a href="/options" className="inline-flex items-center justify-center text-white uppercase tracking-wide font-semibold text-lg sm:text-xl px-10 sm:px-12 py-4 rounded-full border-2 border-[#6b3e12] shadow-[0_6px_0_#6b3e12,0_12px_20px_rgba(0,0,0,0.2)] bg-gradient-to-b from-amber-300 to-orange-500 hover:brightness-110 transition">
             Play Now
-          </button>
+          </a>
         </div>
       </section>
 
