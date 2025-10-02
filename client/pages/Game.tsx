@@ -25,7 +25,7 @@ export default function Game() {
 
   return (
     <div className="min-h-screen retro-paper text-foreground font-manrope overflow-x-hidden">
-      <div className="relative min-h-screen flex flex-col px-4 py-6 sm:py-10">
+      <div className="screen-grid-3 relative px-4 py-6 sm:py-10">
         {/* Top Bar */}
         <div className="flex items-start justify-between mb-6 sm:mb-8">
           {/* Home Button */}
