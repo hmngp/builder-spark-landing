@@ -72,7 +72,7 @@ export default function Options() {
           </form>
 
           <div className="mt-10 flex items-center justify-center gap-4">
-            <Link to="/results">
+            <Link to="/game">
               <RetroButton>Start Game</RetroButton>
             </Link>
             <Link to="/">
