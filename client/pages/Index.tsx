@@ -1,8 +1,8 @@
 export default function Index() {
   return (
-    <div className="min-h-screen retro-paper text-foreground font-manrope overflow-x-hidden">
+    <div className="h-screen w-screen retro-paper text-foreground font-manrope overflow-hidden">
       {/* HERO */}
-      <section className="relative min-h-[90vh] flex flex-col items-center justify-center px-4 py-20 sm:py-28">
+      <section className="relative h-full flex flex-col items-center justify-center px-4 py-12">
         {/* Decorative grid/paper already via retro-paper. Add scattered polaroids (desktop only) */}
         <div className="absolute inset-0 pointer-events-none hidden lg:block">
           {/* left top */}
